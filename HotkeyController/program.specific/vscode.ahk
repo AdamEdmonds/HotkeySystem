@@ -1,12 +1,35 @@
 #IfWinActive, Visual Studio Code
 {
-    <!#+^F1:: MsgBox "Prog1 VSCode Handler"
-    <!#+^F2:: MsgBox "Prog2 VSCode Handler"
-    <!#+^F3:: MsgBox "Prog3 VSCode Handler"
-    <!#+^F4:: MsgBox "Prog4 VSCode Handler"
-    <!#+^F5:: MsgBox "Prog5 VSCode Handler"
-    <!#+^F6:: MsgBox "Prog6 VSCode Handler"
-    <!#+^F7:: MsgBox "Prog7 VSCode Handler"
-    <!#+^F8:: MsgBox "Prog8 VSCode Handler"
-
+    <!#+^F1:: 
+        vsc_prog1(){
+            MsgBox "No VSCode Handler for Key 1"
+        }
+    <!#+^F2:: 
+        vsc_prog2(){
+            MsgBox "No VSCode Handler for Key 2"
+        }
+    ;<!#+^F3:: 
+    ;    vsc_prog3(){
+    ;        MsgBox "No VSCode Handler for Key 3"
+    ;    }
+    <!#+^F4:: 
+        vsc_prog4(){
+            MsgBox "No VSCode Handler for Key 4"
+        }
+    <!#+^F5:: 
+        vsc_prog5(){
+            MsgBox "No VSCode Handler for Key 5"
+        }
+    <!#+^F6::
+        vsc_prog6(){
+            MsgBox "No VSCode Handler for Key 6"
+        }
+    <!#+^F7:: 
+        vsc_prog7(){
+            MsgBox "No VSCode Handler for Key 7"
+        }
+    <!#+^F8:: 
+        vsc_prog8(){
+            MsgBox "No VSCode Handler for Key 8"
+        }
 }

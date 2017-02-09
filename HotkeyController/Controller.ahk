@@ -1,25 +1,49 @@
 ;HotKey Symbol Chart - https://autohotkey.com/docs/Hotkeys.htm#Symbols
 
-SetTitleMatchMode, 2
+SetTitleMatchMode, 2  ;Set search mode to Contains
 
 
 
 #IfWinActive ; Default Hotkey Handlers
 {
-    <!#+^F1:: MsgBox "Prog1 Default Handler"
-    <!#+^F2:: MsgBox "Prog2 Default Handler"
-    <!#+^F3:: MsgBox "Prog3 Default Handler"
-    <!#+^F4:: MsgBox "Prog4 Default Handler"
-    <!#+^F5:: MsgBox "Prog5 Default Handler"
-    <!#+^F6:: MsgBox "Prog6 Default Handler"
-    <!#+^F7:: MsgBox "Prog7 Default Handler"
-    <!#+^F8:: MsgBox "Prog8 Default Handler"
+    <!#+^F1:: 
+        prog1(){
+            Run, explorer.exe
+        }
+    <!#+^F2:: 
+        prog2(){
+            MsgBox "No Default Handler Assigned to Key 2"
+        }
+    <!#+^F3:: 
+        prog3(){
+            Run, calc
+        }
+    <!#+^F4:: 
+        prog4(){
+            MsgBox "No Default Handler Assigned to Key 4"
+        }
+    <!#+^F5:: 
+        prog5(){
+            MsgBox "No Default Handler Assigned to Key 5"
+        }
+    <!#+^F6:: 
+        prog6(){
+            MsgBox "No Default Handler Assigned to Key 6"
+        }
+    <!#+^F7:: 
+        prog7(){
+            MsgBox "No Default Handler Assigned to Key 7"
+        }
+    <!#+^F8:: 
+        prog8(){
+            MsgBox "No Default Handler Assigned to Key 8"
+        }
 }
 
 #Include program.specific/vscode.ahk
 
 
-Example
+;Examples
 ;#IfWinActive ahk_class Notepad
 ;^!c::MsgBox You pressed Control+Alt+C in Notepad.
 ;#IfWinActive ahk_class WordPadClass
