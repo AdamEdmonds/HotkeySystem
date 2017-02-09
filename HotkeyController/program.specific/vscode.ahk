@@ -19,7 +19,7 @@
         }
     <!#+^F5:: 
         vsc_prog5(){
-            MsgBox "No VSCode Handler for Key 5"
+            Send ^`
         }
     <!#+^F6::
         vsc_prog6(){
