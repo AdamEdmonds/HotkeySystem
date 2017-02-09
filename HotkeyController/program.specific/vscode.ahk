@@ -8,6 +8,7 @@
         vsc_prog2(){
             MsgBox "No VSCode Handler for Key 2"
         }
+    ; No assignment will result in Default Handler Firing.
     ;<!#+^F3:: 
     ;    vsc_prog3(){
     ;        MsgBox "No VSCode Handler for Key 3"
