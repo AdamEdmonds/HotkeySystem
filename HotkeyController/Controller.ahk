@@ -24,7 +24,8 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
         }
     <!#+^F5:: 
         prog5(){
-            MsgBox "No Default Handler Assigned to Key 5"
+            EnvGet, SystemRoot, SystemRoot
+            Run powershell.exe -ExecutionPolicy unrestricted "Start-Process Powershell -verb runAs C:\Users\aedmonds\Source\Repos\AutoHotKey\HotkeyController\Powershell\scripts.ps1"
         }
     <!#+^F6:: 
         prog6(){
