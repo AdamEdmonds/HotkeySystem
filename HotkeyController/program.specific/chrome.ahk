@@ -6,12 +6,11 @@
     ;    chrome_prog1(){
     ;        MsgBox "No Chrome Handler for Key 1"
     ;    }
-    #F2:: 
-        chrome_prog2(){
-            Send ^t
-            Send chrome://bookmarks/{enter}
-
-        }
+    ;#F2:: 
+    ;    chrome_prog2(){
+    ;        Send ^t
+    ;        Send chrome://bookmarks/{enter}
+    ;    }
     ;#F3:: 
     ;    chrome_prog3(){
     ;        MsgBox "No Chrome Handler for Key 3"
@@ -29,8 +28,14 @@
     ;    chrome_prog6(){
     ;        MsgBox "No Chrome Handler for Key 6"
     ;    }
-    #F7:: 
-        chrome_prog7(){
+    #F7::
+        chrome_WinF7(){
+            Send ^t
+            Send chrome://bookmarks/{enter}
+
+        }
+    +#F7:: 
+        chrome_ShiftWinF7(){
             Send ^t
             Send http://www.youtube.com{enter}
         }

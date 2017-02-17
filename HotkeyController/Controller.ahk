@@ -1,43 +1,79 @@
+;Author - Adam Edmonds
+;Email - adam.edmonds@gmail.com
+
+
+;Hotkey Legend
+;# = Win Key
+;^ = Ctrl Key
+;+ = Shift Key
+;! = Alt Key
 ;HotKey Symbol Chart - https://autohotkey.com/docs/Hotkeys.htm#Symbols
+
 
 SetTitleMatchMode, 2  ;Set search mode to Contains
 
-
-
 #IfWinActive ; Default Hotkey Handlers
 {
+;------------------------------------ Key 1 -------------------------------------------------
     #F10:: ;F1 cannot be used as it is controlled by Windows
         prog1(){
             Send {Volume_Mute}
         }
-    #F2:: 
+;------------------------------------ Key 2 -------------------------------------------------
+    #F2:: ;Win + F2
         prog2(){
-            Run chrome.exe
+            Send #d ;Show Desktop
         }
+    +#F2::
+        progShiftWinF2(){
+            Run chrome.exe ;Open Chrome
+        }   
+    !#F2::
+        progAltWinF2(){  
+            Run, %windir%\explorer.exe shell:Appsfolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge
+        }
+;------------------------------------ Key 3 -------------------------------------------------
     #F3:: 
         prog3(){
             Run, calc
         }
+;------------------------------------ Key 4 -------------------------------------------------
     #F4:: 
         prog4(){
             Send {Volume_Up}
         }
+    +#F4::
+        prog_ShiftWinF4(){
+            send ^#{Right}
+        }
+;------------------------------------ Key 5 -------------------------------------------------
     #F5:: 
         prog5(){
             EnvGet, SystemRoot, SystemRoot
             Run powershell.exe -ExecutionPolicy unrestricted "Start-Process Powershell -verb runAs C:\Users\aedmonds\Source\Repos\AutoHotKey\HotkeyController\Powershell\scripts.ps1"
         }
+;------------------------------------ Key 6 -------------------------------------------------
     #F6:: 
         prog6(){
             Run, explorer.exe
         }
+    +#F6::
+        prog_ShiftWinF6(){
+            Run, powershell.exe
+        }
+;------------------------------------ Key 7 -------------------------------------------------
     #F7:: 
         prog7(){
             Run, code
         }
+;------------------------------------ Key 8 -------------------------------------------------
     #F8:: 
         prog8(){
             Send {Volume_Down}
+        }
+    +#F8::
+        prog_ShiftWinF8(){
+            send ^#{Left}
         }
 }
 
