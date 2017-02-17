@@ -6,41 +6,42 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
 
 #IfWinActive ; Default Hotkey Handlers
 {
-    <!#+^F1:: 
+    #F10:: ;F1 cannot be used as it is controlled by Windows
         prog1(){
-            Run, explorer.exe
+            Send {Volume_Mute}
         }
-    <!#+^F2:: 
+    #F2:: 
         prog2(){
-            MsgBox "No Default Handler Assigned to Key 2"
+            Run chrome.exe
         }
-    <!#+^F3:: 
+    #F3:: 
         prog3(){
             Run, calc
         }
-    <!#+^F4:: 
+    #F4:: 
         prog4(){
-            MsgBox "No Default Handler Assigned to Key 4"
+            Send {Volume_Up}
         }
-    <!#+^F5:: 
+    #F5:: 
         prog5(){
             MsgBox "No Default Handler Assigned to Key 5"
         }
-    <!#+^F6:: 
+    #F6:: 
         prog6(){
-            MsgBox "No Default Handler Assigned to Key 6"
+            Run, explorer.exe
         }
-    <!#+^F7:: 
+    #F7:: 
         prog7(){
-            MsgBox "No Default Handler Assigned to Key 7"
+            Run, code
         }
-    <!#+^F8:: 
+    #F8:: 
         prog8(){
-            MsgBox "No Default Handler Assigned to Key 8"
+            Send {Volume_Down}
         }
 }
 
 #Include program.specific/vscode.ahk
+#Include program.specific/chrome.ahk
 
 
 ;Examples
