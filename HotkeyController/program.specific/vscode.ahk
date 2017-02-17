@@ -17,14 +17,14 @@
     ;    vsc_prog4(){
     ;        MsgBox "No VSCode Handler for Key 4"
     ;    }
-    #F5:: 
-        vsc_prog5(){
-            Send ^`
+    ;  #F5:: 
+    ;      vsc_prog5(){
+    ;          MsgBox "No VSCode Handler for Key 5"
+    ;      }
+    #F6::
+        vsc_prog6(){
+           Send ^{/} 
         }
-    ;#F6::
-    ;    vsc_prog6(){
-    ;        MsgBox "No VSCode Handler for Key 6"
-    ;    }
     ;#F7:: 
     ;    vsc_prog7(){
     ;        MsgBox "No VSCode Handler for Key 7"

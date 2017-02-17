@@ -44,7 +44,7 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
         }
     +#F4::
         prog_ShiftWinF4(){
-            send ^#{Right}
+            Send ^#{Right}
         }
 ;------------------------------------ Key 5 -------------------------------------------------
     #F5:: 
@@ -79,7 +79,7 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
 
 #Include program.specific/vscode.ahk
 #Include program.specific/chrome.ahk
-
+#Include program.specific/edge.ahk
 
 ;Examples
 ;#IfWinActive ahk_class Notepad
