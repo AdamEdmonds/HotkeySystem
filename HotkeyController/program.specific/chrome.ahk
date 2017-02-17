@@ -12,23 +12,23 @@
             Send chrome://bookmarks/{enter}
 
         }
-    #F3:: 
-        chrome_prog3(){
-            MsgBox "No Chrome Handler for Key 3"
-        }
+    ;#F3:: 
+    ;    chrome_prog3(){
+    ;        MsgBox "No Chrome Handler for Key 3"
+    ;    }
 
     ;<!#+^F4:: 
     ;    chrome_prog4(){
     ;        MsgBox "No Chrome Handler for Key 4"
     ;    }
-    #F5:: 
-        chrome_prog5(){
-            Send ^`
-        }
-    #F6::
-        chrome_prog6(){
-            MsgBox "No Chrome Handler for Key 6"
-        }
+    ;#F5:: 
+    ;    chrome_prog5(){
+    ;        MsgBox "No Chrome Handler for Key 5"
+    ;    }
+    ;#F6::
+    ;    chrome_prog6(){
+    ;        MsgBox "No Chrome Handler for Key 6"
+    ;    }
     #F7:: 
         chrome_prog7(){
             Send ^t
