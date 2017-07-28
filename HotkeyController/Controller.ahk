@@ -55,11 +55,11 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
 ;------------------------------------ Key 6 -------------------------------------------------
     #F6:: 
         prog6(){
-            Run, explorer.exe
+            Run, powershell.exe
         }
     +#F6::
         prog_ShiftWinF6(){
-            Run, powershell.exe
+            Run, explorer.exe
         }
 ;------------------------------------ Key 7 -------------------------------------------------
     #F7:: 
