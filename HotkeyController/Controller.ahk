@@ -40,7 +40,11 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
 ;------------------------------------ Key 4 -------------------------------------------------
     #F4:: 
         prog4(){
-            Send {Volume_Up}
+            While GetKeyState("F4","P")
+            {
+                Send {Volume_Up}
+                Sleep, 1 ; every 10 miliseconds
+            }
         }
     +#F4::
         prog_ShiftWinF4(){

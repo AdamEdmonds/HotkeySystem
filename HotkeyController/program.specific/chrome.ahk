@@ -8,25 +8,37 @@
     ;    }
     ;#F2:: 
     ;    chrome_prog2(){
-    ;        Send ^t
-    ;        Send chrome://bookmarks/{enter}
+    ;        Click 100
     ;    }
     ;#F3:: 
     ;    chrome_prog3(){
-    ;        MsgBox "No Chrome Handler for Key 3"
+    ;        Click 50
     ;    }
 
     ;<!#+^F4:: 
     ;    chrome_prog4(){
     ;        MsgBox "No Chrome Handler for Key 4"
     ;    }
-    ;#F5:: 
-    ;    chrome_prog5(){
-    ;        MsgBox "No Chrome Handler for Key 5"
-    ;    }
+    ;Cookie Clicker Helpers
+    #F5:: 
+        chrome_prog5(){
+            Click 50
+        }
+    #+F5:: 
+        chrome_prog_ShiftWin5(){
+            Click 100
+        }
+    #!F5:: 
+        chrome_prog_AltWin5(){
+            Click 500
+        }
+    #+!F5:: 
+        chrome_prog_AltShiftWin5(){
+            Click 1000
+        }
     ;#F6::
     ;    chrome_prog6(){
-    ;        MsgBox "No Chrome Handler for Key 6"
+    ;        Click 2
     ;    }
     #F7::
         chrome_WinF7(){
