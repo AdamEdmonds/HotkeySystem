@@ -1,3 +1,4 @@
+
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 {
 
@@ -19,11 +20,21 @@
     ;    chrome_prog4(){
     ;        MsgBox "No Chrome Handler for Key 4"
     ;    }
+
+            
     ;Cookie Clicker Helpers
+
+Toggle = 0
+#MaxThreadsPerHotkey 2
     #F5:: 
-        chrome_prog5(){
-            Click 50
-        }
+        ;chrome_prog5(){ ; Do not use MethodNames on Toggle Commands.
+        Toggle := !Toggle
+         While Toggle{
+                Click
+                sleep 50
+            }
+            return
+        ;}
     #+F5:: 
         chrome_prog_ShiftWin5(){
             Click 100
