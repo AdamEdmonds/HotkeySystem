@@ -52,10 +52,10 @@ SetTitleMatchMode, 2  ;Set search mode to Contains
         }
 ;------------------------------------ Key 5 -------------------------------------------------
     #F5:: 
-        prog5(){
-            EnvGet, SystemRoot, SystemRoot
-            Run powershell.exe -ExecutionPolicy unrestricted "Start-Process Powershell -verb runAs C:\Users\aedmonds\Source\Repos\AutoHotKey\HotkeyController\Powershell\scripts.ps1"
-        }
+        ;prog5(){
+        ;    EnvGet, SystemRoot, SystemRoot
+        ;    Run powershell.exe -ExecutionPolicy unrestricted "Start-Process Powershell -verb runAs C:\Users\aedmonds\Source\Repos\AutoHotKey\HotkeyController\Powershell\scripts.ps1"
+        ;}
 ;------------------------------------ Key 6 -------------------------------------------------
     #F6:: 
         prog6(){
