@@ -47,20 +47,18 @@ Toggle = 0
         chrome_prog_AltShiftWin5(){
             Click 1000
         }
-    ;#F6::
-    ;    chrome_prog6(){
-    ;        Click 2
-    ;    }
+    #F6::
+       chrome_prog6(){
+           Send ^w ;Close Tab
+       }
     #F7::
         chrome_WinF7(){
             Send ^t
-            Send chrome://bookmarks/{enter}
-
         }
     +#F7:: 
         chrome_ShiftWinF7(){
             Send ^t
-            Send http://www.youtube.com{enter}
+            Send chrome://bookmarks/{enter}
         }
     ;<!#+^F8:: 
     ;    chrome_prog8(){
