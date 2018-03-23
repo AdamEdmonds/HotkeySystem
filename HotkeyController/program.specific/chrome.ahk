@@ -27,6 +27,10 @@
 Toggle = 0
 #MaxThreadsPerHotkey 2
     #F5:: 
+        ; chrome_prog_ShiftWin5(){
+        ;     Click 100
+        ; }
+    #+F5:: 
         ;chrome_prog5(){ ; Do not use MethodNames on Toggle Commands.
         Toggle := !Toggle
          While Toggle{
@@ -35,10 +39,6 @@ Toggle = 0
             }
             return
         ;}
-    #+F5:: 
-        chrome_prog_ShiftWin5(){
-            Click 100
-        }
     #!F5:: 
         chrome_prog_AltWin5(){
             Click 500
